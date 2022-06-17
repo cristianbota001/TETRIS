@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="tetris.js"></script>
+    <title>TETRIS</title>
+</head>
+<body>
+    <div class="blur_cont">
+        <div class="main_cont">
+            <canvas class="main_canvas"></canvas>
+            <div class="second_cont">
+                <div class="cont_blocks_window">
+                    <canvas class="blocks_window"></canvas>
+                </div>
+                <div class="window">
+                    <div>
+                        <h3>BEST SCORE</h3>
+                        <p class="best_score">0</p>
+                    </div>
+                    <div>
+                        <h3>SCORE</h3>
+                        <p class="score">0</p>
+                    </div>
+                    <div>
+                        <h3>LINES</h3>
+                        <p class="lines">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="options">Opzioni</button>
+                <button class="start_stop">Start</button>
+            </div>
+        </div>
+    </div>
+    <div class="option_menu">
+        <h1>Menu opzioni</h1>
+        <div class="buttons_menu">
+            <form method="post" action = "/TETRIS_API/tetris_api.php">
+                <input type="text" placeholder="Lunghezza canvas" class="input_text" id="input_text_canvas_width" name="canvas_width">
+                <div class="end_buttons">
+                    <input type="submit" value="Salva" class="save_button">
+                    <input type="button" value="Esci" class="exit_button">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
